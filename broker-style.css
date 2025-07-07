@@ -1,0 +1,228 @@
+/* Broker Panel Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.sidebar {
+    background-color: #198754;
+    min-height: calc(100vh - 56px);
+    padding: 0;
+}
+
+.sidebar-sticky {
+    position: sticky;
+    top: 0;
+    height: calc(100vh - 56px);
+    padding-top: 1rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.sidebar .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0.75rem 1rem;
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar .nav-link i {
+    width: 20px;
+}
+
+.main-content {
+    padding: 2rem;
+}
+
+.stats-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: transform 0.2s ease;
+}
+
+.stats-card:hover {
+    transform: translateY(-2px);
+}
+
+.content-section {
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.service-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: transform 0.2s ease;
+    margin-bottom: 1.5rem;
+}
+
+.service-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.service-card img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.service-badge {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 15px;
+}
+
+.badge-accommodation {
+    background-color: #007bff;
+}
+.badge-experience {
+    background-color: #28a745;
+}
+.badge-transportation {
+    background-color: #ffc107;
+    color: #212529;
+}
+.badge-wellness {
+    background-color: #17a2b8;
+}
+.badge-adventure {
+    background-color: #fd7e14;
+}
+.badge-food-dining {
+    background-color: #e83e8c;
+}
+.badge-cultural {
+    background-color: #6f42c1;
+}
+.badge-shopping {
+    background-color: #20c997;
+}
+.badge-entertainment {
+    background-color: #dc3545;
+}
+.badge-photography {
+    background-color: #6c757d;
+}
+
+.table th {
+    border-top: none;
+    font-weight: 600;
+    color: #495057;
+    background-color: #f8f9fa;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border-radius: 10px;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    font-weight: 600;
+}
+
+.btn {
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.btn-success {
+    background-color: #198754;
+    border-color: #198754;
+}
+
+.btn-success:hover {
+    background-color: #157347;
+    border-color: #146c43;
+}
+
+.form-control,
+.form-select {
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #198754;
+    box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
+}
+
+.alert {
+    border: none;
+    border-radius: 8px;
+}
+
+.price-tag {
+    font-weight: 600;
+    color: #198754;
+    font-size: 1.1rem;
+}
+
+.rating-stars {
+    color: #ffc107;
+}
+
+.service-actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.service-card:hover .service-actions {
+    opacity: 1;
+}
+
+.earnings-card {
+    background: linear-gradient(135deg, #198754, #20c997);
+    color: white;
+    border-radius: 15px;
+}
+
+.analytics-chart {
+    height: 300px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6c757d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 1rem;
+    }
+
+    .stats-card .card-body h4 {
+        font-size: 1.5rem;
+    }
+
+    .service-card img {
+        height: 150px;
+    }
+}

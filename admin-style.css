@@ -1,0 +1,159 @@
+/* Admin Panel Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.sidebar {
+    background-color: #343a40;
+    min-height: calc(100vh - 56px);
+    padding: 0;
+}
+
+.sidebar-sticky {
+    position: sticky;
+    top: 0;
+    height: calc(100vh - 56px);
+    padding-top: 1rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.sidebar .nav-link {
+    color: #adb5bd;
+    padding: 0.75rem 1rem;
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    color: #fff;
+    background-color: #495057;
+}
+
+.sidebar .nav-link i {
+    width: 20px;
+}
+
+.main-content {
+    padding: 2rem;
+}
+
+.stats-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: transform 0.2s ease;
+}
+
+.stats-card:hover {
+    transform: translateY(-2px);
+}
+
+.content-section {
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.table th {
+    border-top: none;
+    font-weight: 600;
+    color: #495057;
+    background-color: #f8f9fa;
+}
+
+.badge {
+    font-size: 0.75em;
+    padding: 0.375rem 0.75rem;
+}
+
+.badge-confirmed {
+    background-color: #28a745;
+}
+
+.badge-pending {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.badge-cancelled {
+    background-color: #dc3545;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border-radius: 10px;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    font-weight: 600;
+}
+
+.btn {
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.service-card {
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    transform: translateY(-3px);
+}
+
+.service-badge {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.badge-accommodation { background-color: #007bff; }
+.badge-experience { background-color: #28a745; }
+.badge-transportation { background-color: #ffc107; color: #212529; }
+.badge-wellness { background-color: #17a2b8; }
+.badge-adventure { background-color: #fd7e14; }
+.badge-food-dining { background-color: #e83e8c; }
+.badge-cultural { background-color: #6f42c1; }
+.badge-shopping { background-color: #20c997; }
+.badge-entertainment { background-color: #dc3545; }
+.badge-photography { background-color: #6c757d; }
+
+.alert {
+    border: none;
+    border-radius: 8px;
+}
+
+.modal-content {
+    border: none;
+    border-radius: 10px;
+}
+
+.form-control, .form-select {
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 1rem;
+    }
+    
+    .stats-card .card-body h4 {
+        font-size: 1.5rem;
+    }
+}
